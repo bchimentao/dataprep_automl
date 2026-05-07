@@ -1,0 +1,21 @@
+random_state: 42
+test_size: 0.2
+
+datasets:
+  - name: dataset_1
+    path: data/raw/dataset_1.csv
+    target: target
+
+frameworks:
+  - autogluon
+
+balancing_strategies:
+  - none
+
+metrics:
+  - precision
+  - recall
+  - f1
+  - auc_pr
+
+output_dir: outputs
